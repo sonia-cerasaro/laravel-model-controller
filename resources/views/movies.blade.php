@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('main')
-{{var_dump($movies)}}
+<!-- {{dump($movies)}} -->
+@foreach ($movies as $movie)
+{{$movie->title}}
+@endforeach
 
 @endsection

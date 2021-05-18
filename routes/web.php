@@ -17,4 +17,4 @@ use App\Http\Controllers\MovieController;
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/rooms', 'MovieController@index');
+Route::get('/movies', 'MovieController@index');
