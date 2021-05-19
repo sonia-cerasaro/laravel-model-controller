@@ -2,14 +2,12 @@
 
 @section('main')
 <!-- {{dump($movies)}} -->
-<div class="" style="display: flex">
+<div class="" style="display: flex; justify-content: space-around; margin-top: 50px;">
 
 
 @foreach ($movies as $movie)
-<div class="">
+<div class="" style="width: 120px; height: 150px; background-color: lightblue; text-align: center;">
   {{$movie->title}} <br>
-  {{$movie->id}} <br>
-  {{$movie->original_title}} <br>
   {{$movie->vote}} <br>
   {{$movie->date}} <br>
 </div>
